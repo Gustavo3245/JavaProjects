@@ -17,11 +17,7 @@ public class Destruidor extends Lutador {
     }
 
     public Destruidor(String nome, String alcunha, int forca, int velocidade, int vida, int cura){
-        super.setNome(nome);
-        super.setAlcunha(alcunha);
-        super.setVelocidade(velocidade);
-        super.setVida(vida);
-        super.setCura(cura);
+        super( nome, alcunha, 0, velocidade, vida, cura);
         setForca(forca);
     }
 

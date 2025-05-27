@@ -9,8 +9,7 @@ public class Curandeiro extends Lutador{
         }
     }
 
-    public Curandeiro() {
-    }
+    public Curandeiro() {}
 
     public Curandeiro(String nome, String alcunha){
         super.setNome(nome);
@@ -18,7 +17,8 @@ public class Curandeiro extends Lutador{
     }
 
     public Curandeiro(String nome, String alcunha, int forca, int velocidade, int vida, int cura) {
-        super(nome, alcunha, forca, velocidade, vida, cura);
+        super(nome, alcunha, forca, velocidade, vida, 0);
+        setCura(cura);
     }
 
     @Override

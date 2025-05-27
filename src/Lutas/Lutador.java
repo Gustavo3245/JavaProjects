@@ -10,14 +10,13 @@ abstract class Lutador {
 
     public Lutador(){}
 
-
     public Lutador(String nome, String alcunha, int forca, int velocidade, int vida, int cura) {
-        this.nome = nome;
-        this.alcunha = alcunha;
-        this.forca = forca;
-        this.velocidade = velocidade;
-        this.vida = vida;
-        this.cura = cura;
+        setNome(nome);
+        setAlcunha(alcunha);
+        setForca(forca);
+        setVelocidade(velocidade);
+        setVida(vida);
+        setCura(cura);
     }
 
     public String getNome() {

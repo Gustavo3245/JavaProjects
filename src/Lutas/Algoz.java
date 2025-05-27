@@ -18,7 +18,8 @@ public class Algoz extends Lutador{
     }
 
     public Algoz(String nome, String alcunha, int forca, int velocidade, int vida, int cura) {
-        super(nome, alcunha, forca, velocidade, vida, cura);
+        super(nome, alcunha, forca, 0, vida, cura);
+        setVelocidade(velocidade);
     }
 
     @Override
